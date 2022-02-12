@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  width: 700px;
+  height: 200px;
+  margin-top: 0px;
+  background-color: black;
+  position: absolute;
+}
+
+.cont2{
+  position: absolute;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
