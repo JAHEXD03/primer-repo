@@ -4,19 +4,55 @@
   padding: 0px;
 }
 
-.container{
-  width: 800px;
-  height: 200px;
-  margin-top: 0px;
-  background-color: black;
-  position: absolute;
+body{
+  color: white;
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-.cont2{
-  position: absolute;
-  background-color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.container{
+  margin: auto;
+  width: 90%;
+}
+
+.nav-main{
+  display: flex; /*Permite organizar los elementos*/
+  font-size: 15px;
+  justify-content: space-between; /*Permite utilizar todo el ancho disponible*/
+  align-items: center;
+  height: 60px;
+  padding: 20px 0px;
+}
+
+.nav-img{
+  width: 55px;
+}
+
+.nav-main ul{
+  display: flex;
+}
+
+.nav-main ul li{
+  padding: 65px;
+}
+
+.nav-main ul li a{
+  padding: 5px;
+}
+
+.nav-main ul li a:hover{
+  border-bottom: 3px solid black ;/*da estilo a los enlaces*/
+}
+
+.nav-main ul.nav-menu{
+  flex: 1;
+  margin-left: 20px;
 }
