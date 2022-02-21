@@ -171,7 +171,7 @@ hr{
   text-decoration:underline;
 }
 
-/*Cards Baner*/
+/*Cards Baner One*/
 
 .cards-baner-one{
   width: 100%;
@@ -192,4 +192,47 @@ hr{
 .cards-baner-one .btn{
   color: white;
   text-transform: uppercase;
+}
+
+.cards-baner-one p,
+.cards-baner-one h2{
+  margin: 10px 0 ;
+  text-align: justify;
+}
+
+.cards-baner-one p{
+  padding-right: 850px;
+}
+
+/*Cards Baner Two*/
+
+.cards-baner-two{
+  width: 100%;
+  height: 360px;
+  background: url(./imagenes/car7.jpg);
+  margin-bottom: 40px;
+  background-size: cover;
+  background-repeat: no-repeat; /*no se repetita la imagen*/
+  background-position: center center; /*la posicion sera centrada*/
+  background-size: 1450px 480px;
+}
+
+.cards-baner-two .content{
+  width: 100%;
+  padding: 90px 10px 0 30px;
+}
+
+.cards-baner-two .btn{
+  color: white;
+  text-transform: uppercase;
+}
+
+.cards-baner-two p,
+.cards-baner-two h2{
+  margin: 10px 0 ;
+  text-align: justify;
+}
+
+.cards-baner-two p{
+  padding-right: 850px;
 }
