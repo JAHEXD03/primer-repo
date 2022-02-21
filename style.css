@@ -23,6 +23,8 @@ ul{
   width: 90%;
 }
 
+/*Navegacion*/
+
 .nav-main{
   display: flex; /*Permite organizar los elementos*/
   font-size: 15px;
@@ -55,6 +57,11 @@ ul{
 .nav-main ul.nav-menu{
   flex: 1;
   margin-left: 20px;
+}
+
+.form-inline .form-control{
+  display: flex;
+  margin: 0px 0px 0px 0px;
 }
 
 /*show case*/
@@ -162,4 +169,27 @@ hr{
 
 .new-cards a:hover{
   text-decoration:underline;
+}
+
+/*Cards Baner*/
+
+.cards-baner-one{
+  width: 100%;
+  height: 360px;
+  background: url(./imagenes/car5.jpg);
+  margin-bottom: 40px;
+  background-size: cover;
+  background-repeat: no-repeat; /*no se repetita la imagen*/
+  background-position: center center; /*la posicion sera centrada*/
+  background-size: 1550px 480px;
+}
+
+.cards-baner-one .content{
+  width: 100%;
+  padding: 90px 10px 0 30px;
+}
+
+.cards-baner-one .btn{
+  color: white;
+  text-transform: uppercase;
 }
