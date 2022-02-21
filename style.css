@@ -236,3 +236,56 @@ hr{
 .cards-baner-two p{
   padding-right: 850px;
 }
+
+/*Social*/
+
+.social{
+  margin: 50px;
+}
+
+.social p{
+  color: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social a i{
+  color: black;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a{
+  margin: 0 10px;
+}
+
+.links a i{
+  font-size: 2rem;
+}
+
+/*Footer-links*/
+
+.footer-links{
+  background-color: rgb(233, 231, 231);
+  padding: 35px 0;
+  font-size: 15px;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;/*espaciado entre columnas*/
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-container ul{
+  margin: 0 auto;
+}
