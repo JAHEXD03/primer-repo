@@ -64,6 +64,17 @@ ul{
   margin: 0px 0px 0px 0px;
 }
 
+.menu-btn{
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 30px;
+  z-index: 2;
+  font-size: 1.5rem;
+  display: none;
+
+}
+
 /*show case*/
 
 hr{
@@ -72,7 +83,7 @@ hr{
 
 .showcase{
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;  
   height: 610px;
   background-image: url(./imagenes/Car-ShowCase.jpg);
@@ -84,10 +95,11 @@ hr{
   flex-direction: column; /*el texto queda comodado*/
   align-items: center;
   justify-content: flex-end; /*la posicion del texto sera al final*/
-  position: relative  ;
+  position: relative;
 }
 
-.showcase::before{ /*oscurece la imagen de fondo*/
+/*oscurece la imagen*/
+.showcase::before{ 
   content:'';
 	position: absolute;
   top: 0;
@@ -200,9 +212,6 @@ hr{
   text-align: justify;
 }
 
-.cards-baner-one p{
-  padding-right: 850px;
-}
 
 /*Cards Baner Two*/
 
@@ -233,9 +242,7 @@ hr{
   text-align: justify;
 }
 
-.cards-baner-two p{
-  padding-right: 850px;
-}
+
 
 /*Social*/
 
@@ -280,7 +287,7 @@ hr{
 
 .footer-container{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;/*espaciado entre columnas*/
   justify-content: center;
   align-items: flex-start;
@@ -307,13 +314,46 @@ hr{
   padding-bottom: 5px;
 }
 
-@media (max-width:700px) {
+@media (max-width:700px) {  /*si cambia el tamaño de pantalla, el disño de la pagina que acopla  el*/
+  
+  .menu-btn{
+    display: block;
+  }
+  
+  .nav-main ul.nav-menu{
+    display: block;
+    position: absolute;/*estara sobre los elementos*/
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.959);
+    padding: 30px;
+    opacity: .9;
+    transform: translateX(-400px);
+    height: 100%;
+    transition: transform .5s ease-in-out;
+  }
+
+  .nav-main ul.nav-menu.show{
+    transform: translateX(-20px);
+  }
   .new-cards{
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .cards-baner-one .content{
+  .cards-baner-one .content,
+  .cards-baner-two .content{
     width: 80%;
   }
+
+  .footer-links .footer-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .showcase,
+  .showcase::before{
+    position: static;
+  }
+
+
 
 }
