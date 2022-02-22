@@ -273,7 +273,7 @@ hr{
 /*Footer-links*/
 
 .footer-links{
-  background-color: rgba(245, 244, 244, 0.911);
+  background-color: rgba(235, 235, 235, 0.658);
   padding: 35px 0;
   font-size: 15px;
 }
@@ -305,4 +305,15 @@ hr{
   background-color: rgba(245, 244, 244, 0.911);
   padding: 20px 0;
   padding-bottom: 5px;
+}
+
+@media (max-width:700px) {
+  .new-cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards-baner-one .content{
+    width: 80%;
+  }
+
 }
